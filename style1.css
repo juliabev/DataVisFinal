@@ -17,7 +17,7 @@
     --link-visisted: purple;
     
 
-    --img-width: 1000px;
+    --img-width: 800px;
     /* We can do some basic math within CSS*/
     /*--caption-width: 600px*/
     --caption-width: calc(var(--img-width) - 400px);

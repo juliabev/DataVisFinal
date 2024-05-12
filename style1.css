@@ -1,0 +1,99 @@
+/* Ron's example stylesheet */
+
+:root {
+    
+    /*
+    --back: black;
+    --front: white;
+    --link: cyan;
+    --link-visisted: fuchsia;
+    */
+    /* Just swap the comments between the block above and below to toggle page design*/
+
+    
+    --back: white;
+    --front: black;
+    --link: blue;
+    --link-visisted: purple;
+    
+
+    --img-width: 820px;
+    /* We can do some basic math within CSS*/
+    /*--caption-width: 600px*/
+    --caption-width: calc(var(--img-width) - 400px);
+    --div-space: 100px;
+
+    /*--header-font: Arial, Helvetica, sans-serif*/
+    --header-font: 'Times New Roman', Times, serif
+}
+
+
+html {
+    margin: 20px;
+    padding: 0px;
+    height: 100%;
+    width: 100%
+    
+}
+
+div {
+    margin-top: 30px;
+}
+
+body {
+    background-color: var(--back);
+    color: var(--front);
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%
+}
+
+h1 {
+    font-family: var(--header-font)
+}
+
+h2 {
+    font-family: var(--header-font)
+}
+
+/* Probably not great for this page, but just to demonstrate... */
+
+/*
+p {
+    column-count: 2;
+}
+*/
+
+a:link {
+    font-weight: bold;
+    color: var(--link);
+}
+
+a:visited {
+    font-weight: bold;
+    color:var(--link-visisted);
+}
+
+iframe {
+    display: block;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-centered {
+    width: var(--img-width); 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-caption {
+    width: var(--caption-width); 
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: small;
+    text-align: 'center'
+}

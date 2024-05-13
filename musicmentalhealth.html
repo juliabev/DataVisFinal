@@ -44,15 +44,15 @@
         <img src="./heatmap.svg" class="img-centered">
         <div>
         <p>
-        This heatmap demonstrates the correlations of the numerical variables, showing that the mental health illnesses are correlated.
+        This heatmap demonstrates the correlations of the numerical variables, showing that the mental health illnesses are correlated, which we will look closer into later.
             There are no clear relationships between the more musical variables and the other numerical variables, specifically "Hours per day" and "BPM", therefore this visualization sets the stage to understand the other graphs in our project.
         </p>
         <div>
         </div>
         <iframe src="./age_vs_hours.html" class="img-centered" width="800" height="1000" frameborder="0"></iframe>
         <p>
-        These three visualizations are very similar, which emphasizes our point that our data does not have many clear conclusions about the effect of music on mental health.
-            We can see that anxiety, insomnia, and OCD are all skewed.
+       Anxiety, insomnia, and OCD are all skewed. We can see that most people listen to 0-10 hours per day, while younger people tend to listen more during the day.
+            These three visualizations are very similar, which emphasizes our point that our data does not have many clear conclusions about the effect of music on mental health.
         </p>
         <div>
         <p>
@@ -69,7 +69,9 @@
         <iframe src="./anxiety_depression_plotly.html" class="img-centered" width="800" height="700" frameborder="0"></iframe>
         <iframe src="./anxiety_insomnia_plotly.html" class="img-centered" width="800" height="700" frameborder="0"></iframe>
         <p>
-        Anxiety and depression appear to have a positive linear relationship. OCD and Insomnia do not have clear relationshps with anxiety.
+        Anxiety and depression appear to have a positive linear relationship. 
+            OCD and insomnia do not have clear relationshps with anxiety. 
+            Now that we clearly see the linear relationship that anxiety and depression have, we can solely use anxiety rather than depression in our analysis, since they are correlated.
         </p>
         <iframe src="./genre_boxplots.html" class="img-centered" width="800" height="800" frameborder="0"></iframe>
         <p>
@@ -80,11 +82,12 @@
         <div>
         <h2>Questions Answered</h2>
             <ul>
-                <li>What can be inferred about the relationships between the numerical variables in the data?</li>
                 <li>Does primary streaming service differ between age ranges?</li>
-                <li>Is there a correlation between the amount of music listened to and severity of mental health conditions?</li>
-                <li></li>
+                <li>What can be inferred about the relationships between the numerical variables in the data?</li>
+                <li>How does age affect the hours listened per day?</li>
+                <li>Are they correlations between the mental health illnesses themselves? How can we use this to efficiently graph?</li>
                 <li>Can any conclusions be made regarding mental health rankings and the various genres of music listened to?/li>
+                <li>Is there a correlation between the amount of music listened to and severity of mental health conditions?</li>
                 <li>Is there a correlation between BPM and severity of mental health conditions?</li>
             </ul>
         <h2>Evaluation</h2>
